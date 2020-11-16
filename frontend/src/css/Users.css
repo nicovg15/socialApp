@@ -1,0 +1,28 @@
+.users-box {
+  display: flex;
+}
+
+.users-list {
+  height: 93vh;
+  float: left;
+  width: 73%;
+  overflow-y: scroll;
+  background-color: rgb(231, 231, 231);
+  border-left: 1px solid rgb(187, 187, 187);
+}
+
+.users-list::-webkit-scrollbar {
+  display: none;
+}
+
+.users-list > h1 {
+  padding: 25px;
+  font-size: 35px;
+  color: rgb(68, 67, 67);
+}
+
+@media only screen and (max-width: 580px) {
+  .users-list {
+    width: 100%;
+  }
+}

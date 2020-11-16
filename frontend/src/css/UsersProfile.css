@@ -1,0 +1,51 @@
+.usersProfile {
+  background-color: white;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding: 30px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  max-width: 550px;
+}
+
+.usersProfile-avatar {
+  margin-right: 25px;
+}
+
+.usersProfile > div {
+  display: flex;
+  font-size: 20px;
+}
+
+.userProfile-name {
+  margin-right: 55px;
+}
+
+.userProfile-p {
+  margin-bottom: 12px;
+}
+
+.userProfile-name > p > b {
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 861px) {
+  .usersProfile > div {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .userProfile-name {
+    margin-right: 15px;
+  }
+  .usersProfile > div {
+    font-size: 10px;
+  }
+  .usersProfile {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}

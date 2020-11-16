@@ -1,0 +1,55 @@
+.tweetProfile {
+  border-bottom: 1px solid rgb(175, 175, 175);
+  margin-bottom: 10px;
+  height: 150px;
+  overflow-wrap: break-word;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(249, 249, 249);
+}
+
+.tweetProfile > div {
+  display: "flex";
+  align-items: "center";
+}
+
+.tweetProfile-name-delete {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tweetProfile-name-delete > .MuiSvgIcon-root {
+  cursor: pointer;
+}
+
+.tweetProfile-name-delete > .MuiSvgIcon-root:hover {
+  color: rgb(71, 71, 71);
+  transition: 0.4s ease;
+}
+
+.tweetProfile-name {
+  color: rgb(125, 144, 252);
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 10px;
+  text-transform: capitalize;
+}
+.tweetProfile-username {
+  color: grey;
+  margin-left: 5px;
+}
+
+.tweetProfile-content {
+  margin-left: 50px;
+}
+
+.tweetProfile-time {
+  font-style: italic;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: end;
+}

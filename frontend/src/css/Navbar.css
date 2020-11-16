@@ -1,0 +1,80 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(250, 250, 250);
+  box-shadow: 1px 1px 4px grey;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  height: 7vh;
+}
+
+.navbar > h2 {
+  margin-right: 120px;
+  color: rgb(125, 144, 252);
+}
+
+.navbar > form {
+  background-color: rgb(228, 228, 228);
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.navbar > form > input {
+  background-color: rgb(228, 228, 228);
+  outline: none;
+  border: none;
+}
+
+.navbar > form > input::placeholder {
+  color: rgb(68, 67, 67);
+}
+
+.navbar > form > button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.navbar-links {
+  display: none;
+}
+
+.navbar-icon {
+  font-size: 20px !important;
+}
+
+@media only screen and (max-width: 580px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+  }
+  .navbar > h2 {
+    margin-right: 0;
+    margin: 5px;
+  }
+
+  .navbar > form {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .navbar-links {
+    display: flex;
+    margin: 5px;
+  }
+
+  .navbar-links > a {
+    margin-right: 15px;
+    margin-left: 15px;
+    color: rgb(61, 61, 61);
+  }
+
+  .navbar-links > a:hover {
+    color: rgb(125, 144, 252);
+    transition: 0.4s ease;
+  }
+}

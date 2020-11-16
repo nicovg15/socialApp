@@ -1,0 +1,107 @@
+.register {
+  height: 100vh;
+  background: linear-gradient(
+    to left,
+    rgb(198, 204, 248),
+    rgba(163, 175, 241, 0.8)
+  );
+}
+
+.register-icon-box {
+  text-align: center;
+  padding-top: 65px;
+  margin-bottom: 25px;
+}
+
+.register-container {
+  text-align: center;
+  background-color: white;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 8px;
+  margin: 10px auto 0 auto;
+  box-shadow: 0 2px 10px 1px #887b7f;
+}
+
+.register-container > h1 {
+  display: flex;
+  color: rgba(72, 72, 75, 0.8);
+}
+
+.register-error {
+  color: rgb(255, 53, 53);
+  margin-top: 0px;
+  margin-bottom: -10px;
+  letter-spacing: 0.5px;
+}
+
+.register-container > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-container > form > input {
+  height: 45px;
+  border-radius: 8px;
+  border: 1px solid rgb(196, 193, 193);
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.register-container > form > input::placeholder {
+  padding-left: 7px;
+  font-size: 15px;
+}
+
+.register-container > form > button {
+  color: white;
+  background-color: rgb(146, 162, 255);
+  border-radius: 8px;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.register-container > form > button:hover {
+  background-color: rgb(76, 101, 243);
+  transition: 0.5s ease;
+}
+
+.register-container > form > p {
+  padding-top: 10px;
+  margin-bottom: -5px;
+  font-size: 17px;
+}
+
+.register-container > form > p > a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+.register-container > p > a:hover {
+  color: rgb(20, 131, 243);
+  transition: 0.5s ease;
+}
+
+@media only screen and (max-width: 530px) {
+  .register-container > h1 {
+    font-size: 20px;
+    margin-top: -15px;
+  }
+
+  .register-container {
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-bottom: 15px;
+  }
+
+  .register-icon-box {
+    padding-top: 25px;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .register-container > form > p {
+    font-size: 14px;
+  }
+}

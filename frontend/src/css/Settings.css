@@ -1,0 +1,129 @@
+.settings-box {
+  display: flex;
+}
+
+.settings-password {
+  height: 93vh;
+  float: left;
+  width: 73%;
+  overflow-y: scroll;
+  background-color: rgb(231, 231, 231);
+  border-left: 1px solid rgb(187, 187, 187);
+}
+
+.settings-password::-webkit-scrollbar {
+  display: none;
+}
+
+.settings-password > div {
+  background-color: white;
+  border-radius: 9px;
+  padding: 5px 25px 10px 20px;
+  margin: 20px;
+}
+
+.settings-password > div > h1 {
+  font-size: 35px;
+  color: rgb(68, 67, 67);
+  margin-bottom: 35px;
+}
+
+.settings-firstForm {
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings-firstForm > div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.settings-firstForm > div > label {
+  font-weight: 650;
+  margin-right: 10px;
+}
+
+.settings-firstForm > div > input {
+  height: 22px;
+  width: 75%;
+  outline: none;
+}
+
+.settings-firstForm > button {
+  background-color: rgb(103, 129, 247);
+  color: white;
+  border-radius: 17px;
+  margin-left: 10px;
+}
+
+.settings-firstForm > button:hover {
+  background-color: rgb(103, 129, 247, 0.8);
+  transition: 0.5s ease;
+}
+
+.login-password-errorOne {
+  color: red;
+  background-color: rgb(253, 8, 8, 0.2);
+  padding: 5px;
+  border-radius: 5px;
+  max-width: 200px;
+  margin-bottom: 15px;
+}
+
+.login-password-errorTwo {
+  color: red;
+  background-color: rgb(253, 8, 8, 0.2);
+  padding: 5px;
+  border-radius: 5px;
+  max-width: 390px;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 825px) {
+  .settings-firstForm > div > input {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .settings-password {
+    width: 100%;
+  }
+
+  .settings-password > div {
+    padding: 5px 10px 10px 20px;
+  }
+
+  .settings-firstForm > div > label {
+    margin-right: 6px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .settings-password > div > h1 {
+    font-size: 28px;
+  }
+
+  .settings-firstForm > div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .settings-firstForm {
+    margin-left: 0px;
+    margin-right: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .settings-firstForm > div > input {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+
+  .settings-firstForm > button {
+    margin-left: 0px;
+  }
+}

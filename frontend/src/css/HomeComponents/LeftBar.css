@@ -1,0 +1,57 @@
+.leftbar {
+  background-color: rgb(212, 217, 252);
+  width: 27%;
+  float: left;
+}
+
+.leftbar > h1 {
+  padding: 15px 20px;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  text-shadow: rgba(75, 74, 74, 0.5) 1px 1px 3px;
+}
+
+.leftbar-links {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.leftbar-links > a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 45px;
+  color: rgb(61, 61, 61);
+}
+
+.leftbar-links > a > span {
+  font-weight: 800;
+  font-size: 22px;
+  padding-left: 15px;
+}
+
+.leftbar-links > a > .MuiSvgIcon-root {
+  font-size: 30px !important;
+}
+
+.leftbar-links > a:hover {
+  color: rgb(125, 144, 252);
+  transition: 0.4s ease;
+}
+
+@media only screen and (max-width: 900px) {
+  .leftbar-links > a > span {
+    display: none;
+  }
+
+  .leftbar > h1 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .leftbar {
+    width: 0%;
+  }
+}

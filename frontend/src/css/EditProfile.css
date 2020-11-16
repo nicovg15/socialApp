@@ -1,0 +1,86 @@
+.editProfile-box {
+  display: flex;
+}
+
+.editProfile-right {
+  height: 93vh;
+  float: left;
+  width: 73%;
+  background-color: rgb(231, 231, 231);
+  border-left: 1px solid rgb(187, 187, 187);
+}
+
+.editProfile-right > div {
+  background-color: white;
+  border-radius: 9px;
+  padding: 5px 25px 10px 20px;
+  margin: 20px;
+}
+
+.editProfile-right > div > h1 {
+  font-size: 35px;
+  color: rgb(68, 67, 67);
+  margin-bottom: 20px;
+}
+
+.editProfile-form {
+  margin-top: 15px;
+}
+
+.editProfile-form > div {
+  margin-bottom: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.editProfile-form > div > label {
+  font-weight: 650;
+  margin-right: 10px;
+}
+
+.editProfile-form > div > input {
+  height: 22px;
+  width: 75%;
+  outline: none;
+}
+
+.editProfile-form > button {
+  margin-top: 0px;
+  background-color: rgb(103, 129, 247);
+  color: white;
+  border-radius: 17px;
+}
+
+.editProfile-form > button:hover {
+  background-color: rgb(103, 129, 247, 0.8);
+  transition: 0.5s ease;
+}
+
+.editProfile-error {
+  color: red;
+  background-color: rgb(253, 8, 8, 0.2);
+  padding: 5px;
+  border-radius: 5px;
+  max-width: 220px;
+  display: block;
+}
+
+@media only screen and (max-width: 825px) {
+  .editProfile-form > div > input {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .editProfile-right {
+    width: 100%;
+  }
+
+  .editProfile-right > div {
+    padding: 5px 10px 10px 20px;
+  }
+
+  .editProfile-form > div > label {
+    margin-right: 6px;
+  }
+}
